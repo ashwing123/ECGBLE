@@ -130,7 +130,7 @@ public class DeviceControlActivity extends Activity {
                 // Show all the supported services and characteristics on the user interface.
                 //displayGattServices(mBluetoothLeService.getSupportedGattServices());
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
-                displayData(intent.getLongExtra(BluetoothLeService.EXTRA_DATA, 0));
+                displayData("" + intent.getLongExtra(BluetoothLeService.EXTRA_DATA, 0));
                 final int yValue = (int) (intent.getLongExtra(BluetoothLeService.EXTRA_DATA, 0));
             }
         }
@@ -372,11 +372,9 @@ public class DeviceControlActivity extends Activity {
         });
     }
 
-    private void displayData(long data) {
-        int data1 = (int) data;
-        if (data != 0) {
-            mDataField.setText(data1);
-            startPlot();
+    private void displayData(String data) {
+        if (data != null) {
+            mDataField.setText(data);
         }
 
     }
