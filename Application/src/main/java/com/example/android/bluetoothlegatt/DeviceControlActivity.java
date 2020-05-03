@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The Android Open Source Project
+ * Copyright 2020 Ashwin Gopalan
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -203,7 +203,7 @@ public class DeviceControlActivity extends Activity {
         mChart.setPinchZoom(true);
 
         //coloring
-        mChart.setBackgroundColor(Color.LTGRAY);
+        mChart.setBackgroundColor(Color.TRANSPARENT);
 
         //get the legends (labels for graph)
         Legend l = mChart.getLegend();
@@ -215,14 +215,15 @@ public class DeviceControlActivity extends Activity {
         XAxis x1 = mChart.getXAxis();
         x1.setTextColor(Color.WHITE);
         x1.setDrawGridLines(false);
+        x1.setGridColor(Color.WHITE);
         x1.setAvoidFirstLastClipping(true);
 
         YAxis y1 = mChart.getAxisLeft();
         y1.setTextColor(Color.WHITE);
-        y1.setAxisMinimum(120);
+        y1.setGridColor(Color.WHITE);
+        y1.setAxisMinimum(100);
         y1.setAxisMaximum(220);
-        y1.setDrawGridLines(false);
-        x1.setAvoidFirstLastClipping(true);
+        y1.setDrawGridLines(true);
 
         YAxis y12 = mChart.getAxisRight();
         y12.setEnabled(false);
@@ -274,7 +275,7 @@ public class DeviceControlActivity extends Activity {
                     });
                     //pause between adds
                     try{
-                        Thread.sleep(100);
+                        Thread.sleep(150);
                     } catch (InterruptedException e){
                         //manage error...
                         Log.e(TAG, e.toString());
@@ -295,7 +296,7 @@ public class DeviceControlActivity extends Activity {
             }
 
             //add the value
-            data.addEntry(new Entry(set.getEntryCount(), (int) (Math.random()*17)+167), 0);
+            data.addEntry(new Entry(set.getEntryCount(), (int) (Math.random()*10)+173), 0);
             mChart.notifyDataSetChanged();
             //limit number of visible entries
             mChart.setVisibleXRange(1, 50);
@@ -374,7 +375,7 @@ public class DeviceControlActivity extends Activity {
 
     private void displayData(String data) {
         if (data != null) {
-            mDataField.setText(data);
+            //mDataField.setText(data);
         }
 
     }

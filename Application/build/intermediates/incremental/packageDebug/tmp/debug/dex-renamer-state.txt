@@ -1,4 +1,4 @@
-#Mon Apr 20 11:08:38 SGT 2020
+#Mon May 04 02:34:49 SGT 2020
 base.0=/Users/s200740/Downloads/BluetoothLeGatt/Application/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex
