@@ -5,7 +5,7 @@
     android:versionName="1.0">
 
     <application
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/heartbeat"
         android:label="NUS Health"
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
         <activity android:name=".blank1"></activity>

@@ -1041,6 +1041,7 @@ drawable bitcoin
 drawable bookmark
 drawable bug
 drawable chat
+drawable circle
 drawable contact
 drawable custom_button
 drawable date
@@ -1052,7 +1053,10 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable doctor
 drawable exercise
+drawable healthcare
 drawable heart
+drawable heartbeat
+drawable holidays
 drawable ic_launcher
 drawable ic_menu_camera
 drawable ic_menu_gallery
@@ -1229,6 +1233,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id nutritionButton
 id outline
 id packed
 id parallax
@@ -1268,6 +1273,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sleepButton
 id smallLabel
 id snackbar_action
 id snackbar_text

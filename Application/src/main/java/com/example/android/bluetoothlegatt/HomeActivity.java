@@ -17,6 +17,8 @@ public class HomeActivity extends AppCompatActivity {
     LinearLayout medicineButton;
     LinearLayout docButton;
     LinearLayout activButton;
+    LinearLayout sleepButton;
+    LinearLayout nutritionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,8 @@ public class HomeActivity extends AppCompatActivity {
         medicineButton = (LinearLayout) findViewById(R.id.medButton);
         docButton = (LinearLayout) findViewById(R.id.doctorButton);
         activButton = (LinearLayout) findViewById(R.id.activeButton);
+        sleepButton = (LinearLayout) findViewById(R.id.sleepButton);
+        nutritionButton = (LinearLayout) findViewById(R.id.nutritionButton);
         getSupportActionBar().setIcon(R.drawable.ic_launcher);
 
     ecgButton.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +62,20 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(openBlankActivity);
         }
     });
+    sleepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent openBlankActivity = new Intent(HomeActivity.this, blank1.class);
+                startActivity(openBlankActivity);
+            }
+        });
+    nutritionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent openBlankActivity = new Intent(HomeActivity.this, blank1.class);
+                startActivity(openBlankActivity);
+            }
+        });
 
     }
 }
