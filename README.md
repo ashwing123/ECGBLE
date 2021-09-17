@@ -30,7 +30,7 @@ Pre-requisites
 App Demo:
 -------------
 
-<iframe src="screenshots/Running the App.mp4" alt="Video of app running"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1qICf1Fvn4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Getting Started
 ---------------
