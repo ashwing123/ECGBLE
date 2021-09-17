@@ -30,7 +30,7 @@ Pre-requisites
 App Demo:
 -------------
 
-<iframe src="screenshots/Running the App.mp4" height="400" alt="Video of app running"/>
+<iframe src="screenshots/Running the App.mp4" alt="Video of app running"></iframe>
 
 Getting Started
 ---------------
