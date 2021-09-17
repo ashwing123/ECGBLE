@@ -27,10 +27,10 @@ Pre-requisites
 - Android Build Tools v27.0.2
 - Android Support Repository
 
-Screenshots
+App Demo:
 -------------
 
-<img src="screenshots/myMain.png" height="400" alt="Screenshot"/> <img src="screenshots/afterConnect.png" height="400" alt="Screenshot"/>
+<iframe src="screenshots/Running the App.mp4" height="400" alt="Video of app running"/>
 
 Getting Started
 ---------------
